@@ -1,0 +1,196 @@
+/* Resetear estilos predeterminados */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #003366; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    line-height: 1.6;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    background-color: #003366; /* Azul oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Efecto de relieve */
+  }
+  
+  header h1  {
+    font-size: 36px;
+    text-align: center;
+  }
+  header h3{
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Efecto de transición suave */
+  }
+  
+  nav ul li a:hover {
+    color: #ffd700; /* Amarillo dorado */
+  }
+  
+  /* Estilos para las secciones */
+  section {
+    border-top: 1px solid #0059b3; /* Borde superior azul fino */
+    border-bottom: 1px solid #0059b3; /* Borde inferior azul fino */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    width: 80%;
+    font-size: 16px;
+    margin: 0 auto; /* Para centralizar horizontalmente */
+  }
+  
+  /* Estilos para las imágenes */
+  .foto {
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width: 200px;
+    width: 100%;
+    border-radius: 50%; /* Para que sea un círculo */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Sombra suave */
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #0059b3; /* Azul */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  
+  /* Estilos para enlaces de correo electrónico */
+  a.email-link {
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none;
+  }
+  
+  a.email-link:hover {
+    color: #ff6f61; /* Color de acento - Rojo anaranjado */
+  }
+  
+  /* Estilos para la sección de Educación */
+  #educacion {
+    background-color: #003366;
+    padding: 50px 0;
+  }
+  
+  #educacion h2 {
+    color: #fff; /* Texto blanco */
+  }
+  
+  #educacion ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #educacion li {
+    margin-bottom: 20px;
+  }
+  
+  #educacion li strong {
+    color: #007bff; /* Azul */
+  }
+
+  .carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  .slide img {
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    width: 400px; /* Ancho fijo */
+    height: 300px; /* Altura fija */
+    object-fit: cover; /* Para mantener la relación de aspecto */
+    border-radius: 50%; /* Para que sea un círculo */
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.3); /* Sombra azul claro */
+    border: 2px solid white; /* Borde azul */
+  }
+  
+  #contacto a {
+    color:#007bff; /* Azul */
+    ;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #contacto a:hover {
+    color: orange; /* Cambio de color al pasar el ratón */
+  }
+  .contact-links {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar relleno interno */
+    margin: 0; /* Eliminar margen */
+}
+
+.contact-links li {
+    margin-bottom: 10px; /* Ajustar el margen inferior entre los elementos */
+}
+
+
+.container {
+    text-align: center; /* Centra horizontalmente todo el contenido */
+  }
+  @keyframes parpadeo {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .parpadeo {
+    list-style-type: none;
+    display: inline-block;
+    /* animation: parpadeo 2s infinite;  Aplicamos la animación de parpadeo */
+  }
+  
+  .parpadeo li {
+    display: inline-block; /* Para que los elementos de la lista estén en línea */
+    margin-right: 20px; /* Espacio entre los elementos */
+  }
+  
+  .parpadeo a img {
+    filter: drop-shadow(2px 2px 5px white); /* Sombra blanca con efecto de desenfoque */
+  }
+      
