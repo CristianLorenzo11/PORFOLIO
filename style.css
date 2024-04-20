@@ -1,3 +1,5 @@
+
+
 /* Resetear estilos predeterminados */
 body, h1, h2, p {
     margin: 0;
@@ -26,28 +28,80 @@ body, h1, h2, p {
   header h3{
     text-align: center;
   }
-  
   nav ul {
     list-style-type: none;
     text-align: center;
-  }
-  
-  nav ul li {
-    display: inline;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
     margin-right: 20px;
-  }
-  
-  nav ul li a {
+    padding: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Ajustar el color de la sombra a blanco */
+}
+
+nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    transition: color 0.3s ease; /* Efecto de transición suave */
-  }
-  
-  nav ul li a:hover {
-    color: #ffd700; /* Amarillo dorado */
-  }
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a:hover {
+    color: white;
+}
+.menu-toggle {
+    display: none; /* Ocultar el botón de la hamburguesa por defecto */
+}
+
+.menu {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar el botón de la hamburguesa en dispositivos pequeños */
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none; /* Ocultar el menú por defecto en dispositivos pequeños */
+        text-align: center; /* Centrar los elementos del menú */
+    }
+
+    .menu.active {
+        display: block; /* Mostrar el menú cuando está activo */
+    }
+
+    .menu li {
+        display: block; /* Mostrar los elementos de la lista como bloques uno debajo del otro */
+        margin: 10px auto; /* Espaciado entre los elementos y centrado horizontal */
+    }
+}
+
+
+
   
   /* Estilos para las secciones */
   section {
@@ -55,6 +109,10 @@ body, h1, h2, p {
     border-bottom: 1px solid #0059b3; /* Borde inferior azul fino */
     padding: 50px 0;
     text-align: center;
+  }
+
+  #sobre-mi{
+    padding-top: 20px;
   }
   
   section h2 {
@@ -74,8 +132,6 @@ body, h1, h2, p {
     margin: 0 auto; /* Centrar horizontalmente */
     max-width: 200px;
     width: 100%;
-    border-radius: 50%; /* Para que sea un círculo */
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Sombra suave */
   }
   
   /* Estilos para el pie de página */
@@ -130,6 +186,7 @@ body, h1, h2, p {
   }
   
   .slide {
+    margin-top: 0px;
     flex: 0 0 100%;
   }
   .slide img {
@@ -138,20 +195,19 @@ body, h1, h2, p {
     width: 400px; /* Ancho fijo */
     height: 300px; /* Altura fija */
     object-fit: cover; /* Para mantener la relación de aspecto */
-    border-radius: 50%; /* Para que sea un círculo */
-    box-shadow: 0 0 20px rgba(0, 0, 255, 0.3); /* Sombra azul claro */
-    border: 2px solid white; /* Borde azul */
+    filter: drop-shadow(2px 2px 5px white); /* Sombra blanca con efecto de desenfoque */
   }
   
   #contacto a {
     color:#007bff; /* Azul */
-    ;
+    transition: transform 0.3s ease; /* Añadimos la transición a la transformación */
     text-decoration: none;
     font-weight: bold;
   }
   
   #contacto a:hover {
     color: orange; /* Cambio de color al pasar el ratón */
+    transform: scale(1.1); /* Aumentar el tamaño al hacer hover */
   }
   .contact-links {
     list-style-type: none; /* Eliminar viñetas */
@@ -182,7 +238,10 @@ body, h1, h2, p {
   .parpadeo {
     list-style-type: none;
     display: inline-block;
-    /* animation: parpadeo 2s infinite;  Aplicamos la animación de parpadeo */
+    transition: transform 0.3s ease; /* Añadimos la transición a la transformación */
+  }
+  .parpadeo :hover{
+    transform: scale(1.1); /* Aumentar el tamaño al hacer hover */
   }
   
   .parpadeo li {
@@ -194,3 +253,94 @@ body, h1, h2, p {
     filter: drop-shadow(2px 2px 5px white); /* Sombra blanca con efecto de desenfoque */
   }
       
+
+
+.proyecto:hover img {
+    transform: scale(1.1); /* Aumentar el tamaño al hacer hover */
+    filter: brightness(1.2); /* Ajustar el brillo al hacer hover */
+    border-radius: 20px;
+}
+/* Estilos base para los proyectos */
+.proyecto {
+    width: 100%; /* Ancho del contenedor al 100% del ancho del padre */
+    max-width: 300px; /* Ancho máximo del contenedor */
+    margin: 10px; /* Espaciado entre proyectos */
+    
+}
+
+.proyecto img {
+    width: 100%; /* Ancho de la imagen al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px; /* Borde redondeado para las imágenes */
+    filter: drop-shadow(2px 2px 5px white); /* Sombra blanca con efecto de desenfoque */
+}
+
+/* Media query para pantallas más grandes */
+/* Estilos base para proyectos */
+.proyectos-container {
+    display: flex;
+    flex-wrap: wrap; /* Para que los proyectos se envuelvan en filas */
+    justify-content: center; /* Para centrar los proyectos horizontalmente */
+}
+
+.proyecto {
+    width: calc(50% - 20px); /* Ancho de cada proyecto en la mitad del contenedor padre con espaciado */
+    margin: 10px; /* Espaciado entre proyectos */
+}
+
+/* Consulta de medios para pantallas de 768px o más */
+@media (min-width: 768px) {
+    .proyecto {
+        width: calc(33.33% - 20px); /* Ancho de cada proyecto en un tercio del contenedor padre con espaciado */
+    }
+}
+
+.proyectos-container {
+    display: flex;
+    overflow-x: auto; /* Para que los proyectos sean desplazables horizontalmente si hay demasiados */
+    scrollbar-width: none; /* Para ocultar la barra de desplazamiento en navegadores compatibles */
+    -ms-overflow-style: none; /* Para ocultar la barra de desplazamiento en Internet Explorer */
+    justify-content: center; /* Para centrar los proyectos horizontalmente */
+}
+
+.proyecto:last-child {
+    margin-right: 0; /* Elimina el espacio entre el último proyecto y el borde derecho */
+}
+
+#descripcion_1,
+#descripcion_2,
+#descripcion_3 {
+    text-decoration: none !important; /* Quitar el subrayado */
+    color: white; /* Color del texto */
+    /* Otros estilos que desees aplicar */
+}
+.proyecto a {
+    text-decoration: none; /* Quitar el subrayado del enlace */
+}
+
+.habilidades-programacion {
+    text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+.logos-container {
+    display: flex; /* Mostrar las imágenes en línea */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    align-items: center; /* Centrar las imágenes verticalmente */
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan en varias líneas si es necesario */
+}
+
+.logos-container img {
+    width: 100px; /* Ancho de las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin: 10px; /* Espacio entre las imágenes */
+    transition: transform 0.3s ease; /* Transición suave al agrandar */
+}
+
+.logos-container img:hover {
+    transform: scale(1.1); /* Agrandar al hacer hover */
+}
+
+
+
+
+

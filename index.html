@@ -14,23 +14,24 @@
     <div class="container">
       
       
-      <nav>
-        <ul>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#educacion">Educación</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul class="menu">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#habilidades-programacion">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+            </div>
   </header>
 
   <section id="sobre-mi">
     <div class="container">
         <div class="carousel">
-            <div class="slide"><img src="foto.jpeg" alt="Foto 1" class="foto"></div>
-          
-    
+            <div class="slide"><img src="foto1.png" alt="Foto 1" class="foto"></div>
+            
             <!-- Agrega más imágenes según sea necesario -->
           </div>
           <div class="container">
@@ -65,16 +66,78 @@
       </ul>
     </div>
   </section>
-  
-  
-  
+  <section  id="habilidades-programacion" >
+    <div  class="habilidades-programacion" >
+    <h2>Habilidades </h2>
+    <div class="logos-container">
+        <img src="icons8-visual-studio-code-48.png" alt="Logo 1">
+        <img src="icons8-css-48.png" alt="Logo 2">
+        <img src="icons8-html5-48.png" alt="Logo 3">
+        <img src="icons8-javascript-48.png" alt="Logo 4">
+        <img src="icons8-mysql-50.png" alt="Logo 5">
+        <img src="icons8-node-js-48.png" alt="Logo 6">
+        <img src="icons8-react-js-100.png" alt="Logo 7">
+        <img src="icons8-chat-gpt-50.png" alt="Logo 8">
+    </div> </div>
+</section>
+
+
+
+
 
   <section id="proyectos">
     <div class="container">
-      <h2>Proyectos</h2>
-      <!-- Aquí puedes agregar tus proyectos con imágenes, descripciones y enlaces -->
+        <h2>Proyectos</h2>
+        <div class="proyectos-container">
+            <div class="proyecto">
+                <a href="https://luxgym.vercel.app/">
+                    <div class="contenido-proyecto">
+                        <img src="LUX.jpeg" alt="Proyecto 1">
+                        <p id="descripcion_1">Pagina Web para gimnasio Luxgym</p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="https://cristianlorenzo11.github.io/juegodepascua/">
+                    <div class="contenido-proyecto">
+                        <img src="PASCUA.jpeg" alt="Proyecto 2">
+                        <p id="descripcion_2">Juego de Pascuas</p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="https://cristianlorenzo11.github.io/juego-de-hacer-clic/">
+                    <div class="contenido-proyecto">
+                        <img src="CLIC.jpeg" alt="Proyecto 3">
+                        <p id="descripcion_3">Juego de hacer Clic</p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="https://cristianlorenzo11.github.io/calculadora/">
+                    <div class="contenido-proyecto">
+                        <img src="calculadora.jpeg" alt="Proyecto 4">
+                        <p id="descripcion_3">Calculadora</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="proyecto">
+                <a href="https://github.com/CristianLorenzo11/PROYECTO">
+                    <div class="contenido-proyecto">
+                        <img src="proyecto-final.jpeg" alt="Proyecto 5">
+                        <p id="descripcion_3">Oulet zona deportiva (proyecto final "curso full stack")</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Repite el bloque para cada proyecto -->
+        </div>
     </div>
-  </section>
+</section>
+
+
+
   <section id="contacto">
     <div class="container">
       <h2>Contacto</h2>

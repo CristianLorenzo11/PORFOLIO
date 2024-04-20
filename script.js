@@ -17,3 +17,8 @@ showNextSlide();
 
 // Configurar un temporizador para cambiar las diapositivas automáticamente cada 3 segundos
 setInterval(showNextSlide, 3000);
+
+function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('active'); // Agregar o quitar la clase 'active' al menú
+}
