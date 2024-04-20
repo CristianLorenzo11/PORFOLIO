@@ -272,7 +272,7 @@ nav ul li a:hover {
     width: 100%; /* Ancho de la imagen al 100% del contenedor */
     height: auto; /* Altura automática para mantener la proporción */
     border-radius: 10px; /* Borde redondeado para las imágenes */
-    filter: drop-shadow(2px 2px 5px white); /* Sombra blanca con efecto de desenfoque */
+    filter: drop-shadow(2px 2px 5px rgb(26, 25, 25)); /* Sombra blanca con efecto de desenfoque */
 }
 
 /* Media query para pantallas más grandes */
@@ -334,6 +334,7 @@ nav ul li a:hover {
     height: auto; /* Altura automática para mantener la proporción */
     margin: 10px; /* Espacio entre las imágenes */
     transition: transform 0.3s ease; /* Transición suave al agrandar */
+
 }
 
 .logos-container img:hover {
