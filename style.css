@@ -8,14 +8,14 @@ body, h1, h2, p {
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #003366; /* Fondo negro */
+    background: linear-gradient(to right, #080808, #0212a0); 
     color: #fff; /* Texto blanco */
     line-height: 1.6;
   }
   
   /* Estilos para el encabezado */
   header {
-    background-color: #003366; /* Azul oscuro */
+    background: linear-gradient(to right, #080808, #0212a0); 
     color: #ffffff; /* Texto blanco */
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Efecto de relieve */
@@ -37,9 +37,8 @@ body, h1, h2, p {
 nav ul li {
     display: inline-block;
     margin-right: 20px;
-    padding: 20px;
+
     transition: transform 0.3s ease;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Ajustar el color de la sombra a blanco */
 }
 
 nav ul li a {
@@ -72,11 +71,12 @@ nav ul li a:hover {
 }
 
 .menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-}
+  text-decoration: none;
+  color: #e0d9d9;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 0;
+  transition: color 0.3s ease, transform 0.3s ease;}
 
 /* Estilos para dispositivos pequeños */
 @media (max-width: 768px) {
@@ -136,7 +136,7 @@ nav ul li a:hover {
   
   /* Estilos para el pie de página */
   footer {
-    background-color: #0059b3; /* Azul */
+    background: linear-gradient(to right, #080808, #0212a0); 
     color: #ffffff; /* Texto blanco */
     padding: 20px 0;
     bottom: 0;
@@ -159,7 +159,7 @@ nav ul li a:hover {
   
   /* Estilos para la sección de Educación */
   #educacion {
-    background-color: #003366;
+    background: linear-gradient(to right, #080808, #0212a0); 
     padding: 50px 0;
   }
   
@@ -272,7 +272,7 @@ nav ul li a:hover {
     width: 100%; /* Ancho de la imagen al 100% del contenedor */
     height: auto; /* Altura automática para mantener la proporción */
     border-radius: 10px; /* Borde redondeado para las imágenes */
-    filter: drop-shadow(2px 2px 5px rgb(26, 25, 25)); /* Sombra blanca con efecto de desenfoque */
+    filter: drop-shadow(2px 2px 5px rgb(131, 126, 126)); /* Sombra blanca con efecto de desenfoque */
 }
 
 /* Media query para pantallas más grandes */
